@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Pokefinder/static/css/main.4b8f942e.chunk.css",
-    "main.js": "/Pokefinder/static/js/main.b124c72f.chunk.js",
-    "main.js.map": "/Pokefinder/static/js/main.b124c72f.chunk.js.map",
+    "main.js": "/Pokefinder/static/js/main.a5505e7d.chunk.js",
+    "main.js.map": "/Pokefinder/static/js/main.a5505e7d.chunk.js.map",
     "runtime-main.js": "/Pokefinder/static/js/runtime-main.c6589b61.js",
     "runtime-main.js.map": "/Pokefinder/static/js/runtime-main.c6589b61.js.map",
     "static/css/2.31461e4f.chunk.css": "/Pokefinder/static/css/2.31461e4f.chunk.css",
@@ -21,6 +21,6 @@
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.d80fbfcf.chunk.js",
     "static/css/main.4b8f942e.chunk.css",
-    "static/js/main.b124c72f.chunk.js"
+    "static/js/main.a5505e7d.chunk.js"
   ]
 }
