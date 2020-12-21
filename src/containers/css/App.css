@@ -1,0 +1,61 @@
+#App {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  grid-template-rows: 1fr;
+  justify-content: center;
+  font-size: small;
+  padding: 0.3vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  color: white;
+}
+
+.redwhiteGradient {
+  background: linear-gradient(to bottom right, rgb(221, 14, 14), rgb(255, 255, 255));
+}
+
+.minWidth5 {
+  min-width: 5rem;
+  max-width: 50rem;
+}
+
+.minWidth14 {
+  min-width: 14rem;
+  max-width: 50rem;
+}
+
+.LondrinaOutline {
+  font-family: "Londrina Outline";
+  text-shadow: 3px 3px rgba(0,0,0,0.4);
+}
+
+.Cards {
+  margin-bottom: 15vh;
+  margin-top: 3vh;
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+  grid-template-rows: 1fr;
+  justify-content: center;
+}
+
+@media(max-width:540px) {
+  .Cards {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 200px));
+  }
+}

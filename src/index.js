@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware, combineReducers } from "redux";
+import { createLogger } from 'redux-logger';
+import { searchPokemon, getPokemon } from './reducers.js';
+import thunkMiddleware from 'redux-thunk';
+import 'tachyons';
+
+const logger = createLogger();
+const rootReducer = combineReducers({ searchPokemon, getPokemon });
+const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
