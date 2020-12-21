@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Dillon-MC/Pokefinder/index.html/static/css/main.4b8f942e.chunk.css",
+    "main.js": "/Dillon-MC/Pokefinder/index.html/static/js/main.b124c72f.chunk.js",
+    "main.js.map": "/Dillon-MC/Pokefinder/index.html/static/js/main.b124c72f.chunk.js.map",
+    "runtime-main.js": "/Dillon-MC/Pokefinder/index.html/static/js/runtime-main.7ad8fd2f.js",
+    "runtime-main.js.map": "/Dillon-MC/Pokefinder/index.html/static/js/runtime-main.7ad8fd2f.js.map",
+    "static/css/2.31461e4f.chunk.css": "/Dillon-MC/Pokefinder/index.html/static/css/2.31461e4f.chunk.css",
+    "static/js/2.d80fbfcf.chunk.js": "/Dillon-MC/Pokefinder/index.html/static/js/2.d80fbfcf.chunk.js",
+    "static/js/2.d80fbfcf.chunk.js.map": "/Dillon-MC/Pokefinder/index.html/static/js/2.d80fbfcf.chunk.js.map",
+    "static/js/3.b07c44ca.chunk.js": "/Dillon-MC/Pokefinder/index.html/static/js/3.b07c44ca.chunk.js",
+    "static/js/3.b07c44ca.chunk.js.map": "/Dillon-MC/Pokefinder/index.html/static/js/3.b07c44ca.chunk.js.map",
+    "index.html": "/Dillon-MC/Pokefinder/index.html/index.html",
+    "static/css/2.31461e4f.chunk.css.map": "/Dillon-MC/Pokefinder/index.html/static/css/2.31461e4f.chunk.css.map",
+    "static/css/main.4b8f942e.chunk.css.map": "/Dillon-MC/Pokefinder/index.html/static/css/main.4b8f942e.chunk.css.map",
+    "static/js/2.d80fbfcf.chunk.js.LICENSE.txt": "/Dillon-MC/Pokefinder/index.html/static/js/2.d80fbfcf.chunk.js.LICENSE.txt",
+    "static/media/pokeball.c85373b9.png": "/Dillon-MC/Pokefinder/index.html/static/media/pokeball.c85373b9.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ad8fd2f.js",
+    "static/css/2.31461e4f.chunk.css",
+    "static/js/2.d80fbfcf.chunk.js",
+    "static/css/main.4b8f942e.chunk.css",
+    "static/js/main.b124c72f.chunk.js"
+  ]
+}
