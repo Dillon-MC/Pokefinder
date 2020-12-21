@@ -37,6 +37,11 @@ class App extends Component {
                   <PageHeader/>
                   <SearchBox searchChange={onSearchChange} getPokemon={onGetPokemon} text={this.props.searchBox} currentPokemon={this.props.name}/>
                   <ErrorText error={this.props.error}/>
+                  <footer className="center white bg-black mt4 pt100">
+                    <h4><a href="https://github.com/Dillon-MC">Github</a></h4>
+                    <h4> | </h4>
+                    <h4>twitter</h4>
+                  </footer>
                 </div>,
       cardComponent:  <div className="Cards">
                         <Card name={this.props.name} type={this.props.type}
@@ -48,11 +53,6 @@ class App extends Component {
         <div>
           {page.mainPage}
           {page.cardComponent}
-          <footer className="center white bg-black mt4 pt100">
-            <h4><a href="https://github.com/Dillon-MC">Github</a></h4>
-            <h4> | </h4>
-            <h4>twitter</h4>
-          </footer>
         </div>
     ) : <div>{page.mainPage}</div>
   }
