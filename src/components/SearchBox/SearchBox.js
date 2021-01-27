@@ -2,9 +2,9 @@ import React from 'react';
 
 const SearchBox = ({ searchChange, getPokemon, text, currentPokemon }) => {
     return (
-        <div className="tc mt6 center">
+        <div className="tc searchBox center">
             <input
-                className="tc searchBox bw2 bg-red white b--black br3 w-40 h3 f2 minWidth14 shadow-3 outline-0" 
+                className="tc bw2 bg-red white b--black br3 w-40 h3 f2 minWidth14 shadow-3 outline-0" 
                 type="search"
                 placeholder="Pokemon name.."
                 autoComplete="on" 

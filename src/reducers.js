@@ -2,7 +2,8 @@ import {
     CHANGE_SEARCH_BOX,
     POKEMON_FETCH_PENDING,
     POKEMON_FETCH_SUCCESS,
-    POKEMON_FETCH_FAILED
+    POKEMON_FETCH_FAILED,
+    TOGGLE_COMPONENT_TRANSITION
 } from './constants.js';
 
 const initialState = {
@@ -23,6 +24,7 @@ const initialPokemonState = {
     type: '',
     weight: '',
     hiddenAbility: '',
+    baseStats: [],
     sprite: '',
     isPending: false,
     error: ''
@@ -33,12 +35,16 @@ export const getPokemon = (state=initialPokemonState, action={}) => {
         case POKEMON_FETCH_PENDING:
             return Object.assign({}, state, { isPending: true });
         case POKEMON_FETCH_SUCCESS:
+            let icon = action.payload.sprites.other.dream_world.front_default;
+            if(icon === null)
+                icon = action.payload.sprites.front_default;
             return Object.assign({}, state, { 
                 name: action.payload.name,
                 type: action.payload.types[0].type.name,
                 weight: action.payload.weight,
                 hiddenAbility: action.payload.abilities[action.payload.abilities.length-1].ability.name,
-                sprite: action.payload.sprites.other.dream_world.front_default,
+                baseStats: action.payload.stats,
+                sprite: icon,
                 error: '',
                 isPending: false
             });
@@ -49,3 +55,15 @@ export const getPokemon = (state=initialPokemonState, action={}) => {
     }
 }
 
+const initialTransitionState = {
+    componentTransition: false
+}
+
+    export const getComponentTransitionState = (state=initialTransitionState, action={}) => {
+    switch(action.type) {
+        case TOGGLE_COMPONENT_TRANSITION:
+            return Object.assign({}, state, { componentTransition: action.payload });
+        default:
+            return state;
+    }
+}
