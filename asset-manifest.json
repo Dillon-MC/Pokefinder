@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Pokefinder/static/css/main.401a51d2.chunk.css",
-    "main.js": "/Pokefinder/static/js/main.59d74c81.chunk.js",
-    "main.js.map": "/Pokefinder/static/js/main.59d74c81.chunk.js.map",
+    "main.css": "/Pokefinder/static/css/main.b8875333.chunk.css",
+    "main.js": "/Pokefinder/static/js/main.aebe8a4f.chunk.js",
+    "main.js.map": "/Pokefinder/static/js/main.aebe8a4f.chunk.js.map",
     "runtime-main.js": "/Pokefinder/static/js/runtime-main.fb537bf8.js",
     "runtime-main.js.map": "/Pokefinder/static/js/runtime-main.fb537bf8.js.map",
     "static/css/2.31461e4f.chunk.css": "/Pokefinder/static/css/2.31461e4f.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.6cbdeedd.chunk.js.map": "/Pokefinder/static/js/3.6cbdeedd.chunk.js.map",
     "index.html": "/Pokefinder/index.html",
     "static/css/2.31461e4f.chunk.css.map": "/Pokefinder/static/css/2.31461e4f.chunk.css.map",
-    "static/css/main.401a51d2.chunk.css.map": "/Pokefinder/static/css/main.401a51d2.chunk.css.map",
+    "static/css/main.b8875333.chunk.css.map": "/Pokefinder/static/css/main.b8875333.chunk.css.map",
     "static/js/2.233e35a6.chunk.js.LICENSE.txt": "/Pokefinder/static/js/2.233e35a6.chunk.js.LICENSE.txt",
     "static/media/pokeball.c85373b9.png": "/Pokefinder/static/media/pokeball.c85373b9.png"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.fb537bf8.js",
     "static/css/2.31461e4f.chunk.css",
     "static/js/2.233e35a6.chunk.js",
-    "static/css/main.401a51d2.chunk.css",
-    "static/js/main.59d74c81.chunk.js"
+    "static/css/main.b8875333.chunk.css",
+    "static/js/main.aebe8a4f.chunk.js"
   ]
 }
