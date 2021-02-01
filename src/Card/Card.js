@@ -16,25 +16,32 @@ const Card = ({
 
     function changeLayout() {
         if(!Expand) {
-            setInfoTextStyle(
-                <p className="ma1 infoText">
-                    {`Type: ${type}`}
-                    <br/>
-                    {`Weight: ${weight}kg`}
-                    <br/>
-                    {`HA: ${hiddenAbility}`}
-                </p>
-            );
-            setCardStyles({Card: 'Card', Icon: 'pokemonIcon-ShiftCenter'});
-            setCardButton({cardButtonStyle: 'extendCardButton', cardButtonText: 'More..'});
+            defualtCard();
         } else {
-            setInfoTextStyle(null);
-            setCardStyles({Card: 'Card-Expand', Icon: 'pokemonIcon-ShiftLeft'});
-            setCardButton({cardButtonStyle: 'extendCardButton', cardButtonText: ''});
+            expandCard();
+        }
+    }
 
-            setTimeout(() => {
-                setCardButton({cardButtonStyle: 'extendCardButton extendCardButton-Expand', cardButtonText: 'Less..'});
-                let stats = baseStats.map((stat, index) => 
+    // Sets the card styles to defualt
+    function defualtCard() {
+        setCardContentStyles('Card', 'pokemonIcon-ShiftCenter', 'extendCardButton', 'More..');
+        setInfoTextStyle(
+            <div className='ma1 infotext textShadow'>
+                <h4>{`Type: ${type}`}</h4>
+                <h4>{`Weight: ${weight}kg`}</h4>
+                <h4>{`HA: ${hiddenAbility}`}</h4>
+            </div>
+        );
+    }
+
+    // Sets the card styles to expanded mode so more info can be displayed.
+    function expandCard() {
+        setCardContentStyles('Card-Expand', 'pokemonIcon-ShiftLeft', 'extendCardButton', '');
+        setInfoTextStyle(null);
+
+        setTimeout(() => {
+            setCardButton({cardButtonStyle: 'extendCardButton extendCardButton-Expand', cardButtonText: 'Less..'});
+            let stats = baseStats.map((stat, index) => 
                 <h4 className={textColors[index]} key={index}>{stat.stat.name}: {stat.base_stat}</h4>);
 
                 setInfoTextStyle(
@@ -44,8 +51,12 @@ const Card = ({
                         <h4>{`HA: ${hiddenAbility}`}</h4>
                         {stats}
                     </div>);
-            }, 300);
-        }
+        }, 350);
+    }
+
+    function setCardContentStyles(cardClass, cardIcon, cardButtonClass, cardButtonText) {
+        setCardStyles({Card: cardClass, Icon: cardIcon});
+        setCardButton({cardButtonStyle: cardButtonClass, cardButtonText: cardButtonText});
     }
 
     useEffect(changeLayout,[Expand, baseStats]);

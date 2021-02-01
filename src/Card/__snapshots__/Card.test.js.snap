@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`expect Card component to match snapshot 1`] = `
+<div
+  className="tc br ba bw2 br3 dib Enlarge pa3 shadow-5 f4 redwhiteGradient undefined"
+>
+  <div>
+    <div>
+      <h4
+        className="ma0 mb3"
+      />
+      <img
+        alt="icon"
+        className="pokemonIcon"
+        src=""
+      />
+    </div>
+    <button />
+  </div>
+</div>
+`;

@@ -1,9 +1,8 @@
 import './css/App.css';
 import React, { Component } from 'react';
-import Card from '../components/Card/Card.js';
+import Card from '../Card/Card.js';
 import SearchBox from '../components/SearchBox/SearchBox.js';
 import { PageHeader } from "../components/PageHeader/PageHeader.js";
-import Scroll from "../components/Scroll/Scroll";
 import ErrorText from '../components/ErrorText/ErrorText.js';
 import { connect } from 'react-redux';
 import { 
@@ -51,8 +50,7 @@ class App extends Component {
                   <SearchBox searchChange={onSearchChange} getPokemon={onGetPokemon} text={this.props.searchBox} currentPokemon={this.props.name}/>
                   <ErrorText error={this.props.error}/>
                 </div>,
-      cardComponent:  
-                      <div className="Cards">
+      cardComponent: <div className="Cards">
                         <Card name={this.props.name} type={this.props.type}
                         weight={this.props.weight} hiddenAbility={this.props.hiddenAbility} baseStats={this.props.baseStats}
                         sprite={this.props.sprite}
