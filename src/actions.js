@@ -1,6 +1,5 @@
 import { 
     CHANGE_SEARCH_BOX,
-    TOGGLE_COMPONENT_TRANSITION,
     POKEMON_FETCH_PENDING,
     POKEMON_FETCH_SUCCESS,
     POKEMON_FETCH_FAILED
@@ -29,9 +28,3 @@ export const setPokemon = (pokemon, currentPokemon) => (dispatch) => {
         dispatch({type: POKEMON_FETCH_FAILED, payload: 'Invalid pokemon'});
     }));
 }
-
-export const setComponentTransition = (entered) => ({
-    type: TOGGLE_COMPONENT_TRANSITION,
-    payload: entered
-});
-

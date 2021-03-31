@@ -21,7 +21,6 @@ const mapStateToProps = (state) => {
     baseStats: state.getPokemon.baseStats,
     sprite: state.getPokemon.sprite,
     error: state.getPokemon.error,
-    componentTransition: state.getComponentTransitionState.componentTransition,
   }
 }
 
@@ -29,21 +28,13 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onSearchChange: (event) => dispatch(setSearchBox(event.target.value)),
     onGetPokemon: (pokemon, currentPokemon) => dispatch(setPokemon(pokemon, currentPokemon)),
-    onComponentTransition: (entered) => dispatch(setComponentTransition(entered))
   }
 }
 
 class App extends Component {
 
   render() {
-    const { onSearchChange, onGetPokemon, onComponentTransition } = this.props;
-    const transitionComponent = () => {
-      if(this.props.componentTransition === false) {
-        return true;
-      } else {
-        return false;
-      }
-    }
+    const { onSearchChange, onGetPokemon } = this.props;
     const page = { 
       mainPage: <div id="App">
                   <PageHeader/>
@@ -53,8 +44,7 @@ class App extends Component {
       cardComponent: <div className="Cards">
                         <Card name={this.props.name} type={this.props.type}
                         weight={this.props.weight} hiddenAbility={this.props.hiddenAbility} baseStats={this.props.baseStats}
-                        sprite={this.props.sprite}
-                        Expand={this.props.componentTransition} extendCardCallback={() => onComponentTransition(transitionComponent())}/>
+                        sprite={this.props.sprite}/>
                       </div>,
       footer: <footer className="center white bg-black mt4 pt100">
                 <h4><a href="https://github.com/Dillon-MC" target="_blank" rel="noreferrer">Github</a></h4>

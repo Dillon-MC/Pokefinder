@@ -3,7 +3,6 @@ import {
     POKEMON_FETCH_PENDING,
     POKEMON_FETCH_SUCCESS,
     POKEMON_FETCH_FAILED,
-    TOGGLE_COMPONENT_TRANSITION
 } from './constants.js';
 
 const initialState = {
@@ -50,19 +49,6 @@ export const getPokemon = (state=initialPokemonState, action={}) => {
             });
         case POKEMON_FETCH_FAILED:
             return Object.assign({}, state, { error: action.payload, isPending: false });
-        default:
-            return state;
-    }
-}
-
-const initialTransitionState = {
-    componentTransition: false
-}
-
-    export const getComponentTransitionState = (state=initialTransitionState, action={}) => {
-    switch(action.type) {
-        case TOGGLE_COMPONENT_TRANSITION:
-            return Object.assign({}, state, { componentTransition: action.payload });
         default:
             return state;
     }

@@ -6,12 +6,12 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, combineReducers } from "redux";
 import { createLogger } from 'redux-logger';
-import { searchPokemon, getPokemon, getComponentTransitionState } from './reducers.js';
+import { searchPokemon, getPokemon } from './reducers.js';
 import thunkMiddleware from 'redux-thunk';
 import 'tachyons';
 
 const logger = createLogger();
-const rootReducer = combineReducers({ searchPokemon, getPokemon, getComponentTransitionState });
+const rootReducer = combineReducers({ searchPokemon, getPokemon });
 const store = createStore(rootReducer, applyMiddleware(thunkMiddleware, logger));
 
 ReactDOM.render(

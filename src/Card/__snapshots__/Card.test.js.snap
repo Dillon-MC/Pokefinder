@@ -15,7 +15,9 @@ exports[`expect Card component to match snapshot 1`] = `
         src=""
       />
     </div>
-    <button />
+    <button
+      onClick={[Function]}
+    />
   </div>
 </div>
 `;
